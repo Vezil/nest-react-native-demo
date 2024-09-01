@@ -1,3 +1,3 @@
 export function nestReactNativeDemo(): string {
-  return 'nest-react-native-demo';
+    return 'nest-react-native-demo';
 }
