@@ -51,14 +51,12 @@ export function App() {
 
     return (
         <div>
-            {todos.map(todo => {
-                return (
-                    <div key={todo.id}>
-                        <input type="checkbox" checked={todo.isDone} onChange={() => onToggle(todo.id)} />
-                        {todo.text}
-                    </div>
-                );
-            })}
+            {todos.map(todo => (
+                <div key={todo.id}>
+                    <input type="checkbox" checked={todo.isDone} onChange={() => onToggle(todo.id)} />
+                    {todo.text}
+                </div>
+            ))}
 
             <div>
                 <input ref={textInputRef} />
