@@ -1,10 +1,5 @@
 import { Injectable } from '@nestjs/common';
-
-interface Todo {
-    id: number;
-    text: string;
-    isDone: boolean;
-}
+import { Todo } from '@nest-react-native-demo/shared-types';
 
 @Injectable()
 export class AppService {
